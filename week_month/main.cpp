@@ -21,45 +21,80 @@ int main()
 	  switch (i)
 	    {
 	    case 1:
-	      cout << "Enter input for Monday: ";
-	      cin >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Monday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 2:
-	      cout << "Enter input for Tuesday: ";
-	      cin >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Tuesday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 3:
-	      cout << "Enter input for Wednesday: ";
-	      cin >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Wednesday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 4:
-	      cout << "Enter input for Thursday: ";
-	      cin >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Thursday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 5:
-	      cout << "Enter input for Friday: ";
-	      cin >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Friday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 6:
-	      cout << "Enter input for Saturday: ";
-	      cin  >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Saturday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 7:
-	      cout << "Enter input for Sunday: ";
-	      cin >> user_input;
-	      cout << endl;
+	      cout << "Please enter input for Sunday: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    default:
@@ -77,63 +112,135 @@ int main()
 	  switch(i)
 	    {
 	    case 1:
-	      cout << "Enter sales for January: ";
-	      cin >> user_input;
+	      cout << "Please enter input for January: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 2:
-	      cout << "Enter sales for February: ";
-	      cin >> user_input;
+	      cout << "Please enter input for February: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 3:
-	      cout << "Enter sales for March: ";
-	      cin >> user_input;
+	      cout << "Please enter input for March: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 4:
-	      cout << "Enter sales for April: ";
-	      cin >> user_input;
+	      cout << "Please enter input for April: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 5:
-	      cout << "Enter sales for May: ";
-	      cin >> user_input;
+	      cout << "Please enter input for May: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 6:
-	      cout << "Enter sales for June: ";
-	      cin >> user_input;
+	      cout << "Please enter input for June: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 7:
-	      cout << "Enter sales for July: ";
-	      cin >> user_input;
+	      cout << "Please enter input for July: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 8:
-	      cout << "Enter sales for August: ";
-	      cin >> user_input;
+	      cout << "Please enter input for August: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 9:
-	      cout << "Enter sales for September: ";
-	      cin >> user_input;
+	      cout << "Please enter input for September: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 10:
-	      cout << "Enter sales for October: ";
-	      cin >> user_input;
+	      cout << "Please enter input for October: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 11:
-	      cout << "Enter sales for November: ";
-	      cin >> user_input;
+	      cout << "Please enter input for November: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    case 12:
-	      cout << "Enter sales for December: ";
-	      cin >> user_input;
+	      cout << "Please enter input for December: " << endl;
+	      while(!(cin >> user_input))
+		{
+		  cout << "Invalid input" << '\n';
+		  cin.clear();
+		  cin.ignore(10000, '\n');
+		  cout << "Please try again." << endl;
+		}
 	      total += user_input;
 	      break;
 	    }
