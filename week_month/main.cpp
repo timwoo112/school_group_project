@@ -250,7 +250,7 @@ int main()
     }
   else
     {
-      cout << "It look like you provided invalid input, restarting program..." << endl;
+      cout << "It looks like you provided invalid input, restarting program..." << endl;
       main();
     }
 
