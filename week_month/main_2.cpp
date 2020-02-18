@@ -1,3 +1,6 @@
+/*
+Authors: Nathaniel Morgret, Joel Fry, David Deraleau, Tim Woolley
+ */
 #include <iostream>
 
 using namespace std;
@@ -10,11 +13,12 @@ int main()
   string user_selection;
 
   // Ask user if they want to input weekly or monthly sales
-  cout << "Do you want to input daily or monthly sales: weekly or monthly ";
+  cout << "Do you want to input sales for a week or a year? (week or year): ";
   cin >> user_selection;
 
   // Iterate on the users selection allowing them to enter data
-  if (user_selection == "weekly")
+  // Only asks for monday-friday since those are business days
+  if (user_selection == "week")
     {
       for (int i = 1; i <= 5; i++)
 	{
@@ -40,6 +44,7 @@ int main()
 	      return 1;
 	      break;
 	    }
+	  // Checks for valid input
 	    while(!(cin >> user_input))
 		{
 		  cout << "Invalid input" << '\n';
@@ -52,7 +57,7 @@ int main()
       // Print out total for the week
       cout << "The total for the week was: $" << total << endl;
     }
-  else if(user_selection == "monthly")
+  else if(user_selection == "year")
     {
       for(int i=1; i<=12; i++)
 	{
@@ -95,6 +100,7 @@ int main()
 	      cout << "Please enter input for December: " << endl;
 	      break;
 	    }
+	  // Checks for valid input
 	  while(!(cin >> user_input))
 	    {
 	      cout << "Invalid input" << '\n';
@@ -105,11 +111,13 @@ int main()
 	    total += user_input;
 	}
       // Print out sales for the year
-      cout << "Total sales this year: $" << total << endl;
+      cout << "Total sales the year: $" << total << endl;
     }
   else
     {
       cout << "It looks like you provided invalid input, restarting program..." << endl;
+      cin.clear();
+      cin.ignore(10000, '\n');
       main();
     }
 
