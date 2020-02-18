@@ -8,14 +8,14 @@ using namespace std;
 int main()
 {
   // Declare variables
-  float total;
-  float user_input;
-  string user_selection;
+  float total = 0;
+  float user_input = 0;
+  string user_selection = "";
 
   // Ask user if they want to input weekly or monthly sales
   cout << "Do you want to input sales for a week or a year? (week or year): ";
   cin >> user_selection;
-
+  
   // Iterate on the users selection allowing them to enter data
   // Only asks for monday-friday since those are business days
   if (user_selection == "week")
@@ -115,7 +115,7 @@ int main()
     }
   else
     {
-      cout << "It looks like you provided invalid input, restarting program..." << endl;
+      cout << "Invalid input, try again..." << endl;
       cin.clear();
       cin.ignore(10000, '\n');
       main();
